@@ -1,0 +1,236 @@
+{
+  "base-url": {
+    "staging": {
+      "arabic": "https://dev.darent.com/ar"
+    }
+  },
+  "users": {
+    "validUser": {
+      "mobile": "000001255",
+      "otp": "8888"
+    },
+    "invalidUser": {
+      "username": "000000000",
+      "otp": "8899"
+    },
+    "validHost": {
+      "mobile": "000000096",
+      "otp": "8888"
+    },
+    "invalidHost": {
+      "mobile": "000000000",
+      "otp": "8888"
+    }
+  },
+  "login": {
+    "verificationButtonText": "تحقق"
+  },
+  "Filters": {
+    "Apartment": "شقة",
+    "Villa": "فيلا",
+    "Chalet": "شاليه",
+    "Tent": "خيمة",
+    "ClassificationButtonText": "التصفية",
+    "exploreAllButtonText": "اكتشف الكل"
+  },
+  "properties":{
+    "chalet": {
+      "name": "T5S-017 شاليه في الرياض مقاطعة, الرياض",
+      "location": "الرياض",
+      "locationFull": "الرياض, الرياض مقاطعة, المملكة العربية السعودية",
+      "unitCodeLabel": "كود الوحدة",
+      "unitCode": "كود الوحدة(\nT5S-017\n)",
+      "summarizedPropertyDescription": "للأتمتة",
+      "summarizedPropertyDescriptionFull": "إنشاء خاصية اختبار للأتمتة\n",
+      "summarizedPropertyContents": {
+        "first": "غرف النوم",
+        "second": "سرير",
+        "third": "ضيوف",
+        "fourth": "دورات المياه"
+      },
+      "ownerName": "Darent Testing",
+      "ownerJoinDate": "انضم أكتوبر ٢٠٢٣",
+      "cleaningFee": "10 ﷼",
+      "propertyDescriptionTitle": "الوصف",
+      "propertyDescription": "الوصف\nإنشاء خاصية اختبار للأتمتة",
+      "holidaysPriceNote": "عطلات",
+      "holidaysPriceNoteFull": "تختلف سعر الليلة حسب عطلات نهاية الأسبوع",
+      "reviewBeforeBuyNote": "المراجعة",
+      "reviewBeforeBuyNoteFull": "ستتمكن من المراجعة قبل الدفع.",
+      "featureSectionTitle": "مرافق",
+      "featureSectionTitleFull": "مرافق الوحدة",
+      "safetyFeaturesSectionTitle": "ميزات السلامة",
+      "selectDateRentButton": "اختار",
+      "propertyFeatureList": {
+        "first": "التلفاز",
+        "second": "مطبخ",
+        "third": "انترنت لاسلكي",
+        "fourth": "حمام سباحة",
+        "fifth": "تكييف هواء",
+        "sixth": "منطقة التمرين",
+        "seventh": "غسالة"
+      },
+      "additionalInformationSectionTitle": "معلومات",
+      "additionalInformationSectionTitleFull": "معلومات اضافية",
+      "additionalInformationSection": {
+        "residenceRoles": {
+          "enterTime": "12:00 PM",
+          "leavingTime": "02:00 PM"
+        },
+        "houseRoles": {
+          "first": "لا توجد قاعدة منزلية متاحة"
+        },
+        "cancellation": {
+          "cancellationType": "مرن",
+          "cancellationNotes": "استرداد كامل المبلغ قبل يوم واحد من الوصول"
+        }
+      },
+      "reviewSection": {
+        "cleanlinessReview": "النظافة",
+        "communicationReview": "تواصل",
+        "accuracyReview": "دقة"
+      },
+      "commentSection": {
+        "nameOfFirstUserCommented": "Elserag",
+        "nameOfFirstUserCommentedFull": "Mohamed Elserag\n",
+        "commentDateOfFirstUserCommented": "04/21/2025",
+        "textCommentOfFirstUserCommented": "Test Automation",
+        "textCommentOfFirstUserCommentedFull": "Test Automation"
+      },
+      "locationSection": {
+        "locationButton": "الموقع"
+      }
+    },
+    "DynamicTestData": {
+      "nightPrice":{
+        "nightPrice": "50 ﷼",
+        "thursdayNightPrice": "150 ﷼",
+        "fridayNightPrice": "150 ﷼",
+        "saturdayNightPrice": "150 ﷼"
+      },
+      "serviceFee":{
+        "serviceFee": "6.60 ﷼",
+        "thursdayServiceFee": "17.60 ﷼",
+        "fridayServiceFee": "17.60 ﷼",
+        "saturdayServiceFee": "17.60 ﷼"
+      },
+      "totalPrice":{
+        "totalPrice": "66.60 ﷼",
+        "thursdayTotalPrice": "177.60 ﷼",
+        "fridayTotalPrice": "177.60 ﷼",
+        "saturdayTotalPrice": "177.60 ﷼"
+      }
+    }
+  },
+  "payment": {
+    "visa": {
+      "cvv": "123"
+    }
+  },
+  "reservations": {
+    "reservationDetailsSection": "تفاصيل الحجز",
+    "checkinDate": "Sun, Apr 13",
+    "checkinTime": "12:00 PM",
+    "checkoutDate": "Mon, Apr 14",
+    "checkoutTime": "12:00 PM",
+    "propertyLocation": "GPJ4+6GX,",
+    "propertyLocationFull": "Address: GPJ4+6GX, Arafat Rd, Badr, Riyadh 14727, Saudi Arabia",
+    "thingsToKnow": "الإرشادات قوانين البيت",
+    "messagingHostButton": "قم بإرسال رسالة لمضیفك",
+    "travellerLocation": "Create Testing Property for Automation",
+    "unitCodeLabel": "كود الوحدة\n\n",
+    "unitCode": "T5S-017",
+    "bookingTerms": "Flexible",
+    "refundPolicy": "استرداد كامل المبلغ قبل يوم واحد من الوصول",
+    "hostName": "Darent Testing",
+    "contactHostButton": "تواصل مع المضيف",
+    "reservationSummarySection": "ملخص الحجز",
+    "darentDiscount": "-0 ﷼",
+    "securityFee": "0 ﷼",
+    "cleaningFee": "10 ﷼",
+    "walletDiscount": "-0 ﷼",
+    "viewReservationSummaryButton": "مشاھدة ملخص الحجز",
+    "paymentMethod": "بطاقه ائتمان",
+    "reportProblemButton": "رفع بلاغ او شكوى",
+    "DynamicTestData": {
+      "nightPrice":{
+        "nightPrice": "50 ﷼",
+        "thursdayNightPrice": "150 ﷼",
+        "fridayNightPrice": "150 ﷼",
+        "saturdayNightPrice": "150 ﷼"
+      },
+      "serviceFee":{
+        "serviceFee": "6.6 ﷼",
+        "thursdayServiceFee": "17.6 ﷼",
+        "fridayServiceFee": "17.6 ﷼",
+        "saturdayServiceFee": "17.6 ﷼"
+      },
+      "totalPrice":{
+        "totalPrice": "66.6 ﷼",
+        "thursdayTotalPrice": "177.6 ﷼",
+        "fridayTotalPrice": "177.6 ﷼",
+        "saturdayTotalPrice": "177.6 ﷼"
+      },
+      "paidAmount":{
+        "paidAmount": "66.6 ﷼",
+        "thursdayPaidAmount": "177.6 ﷼",
+        "fridayPaidAmount": "177.6 ﷼",
+        "saturdayPaidAmount": "177.6 ﷼"
+      }
+    }
+  },
+  "host": {
+    "propertyDropMenuText": "العقارات",
+    "createPropertySelectionText": "اضافة عقار جديد",
+    "reservationsSelectionText": "الحجوزات"
+  },
+  "reservationDetailsAsHost": {
+    "reservationDetailsPopup": {
+      "guestFinancialCollection": {
+        "darentDiscount": "- 0 SR",
+        "cleaningFee": "10 SR",
+        "DynamicTestData": {
+          "accommodation":{
+            "accommodation": "50 SR",
+            "thursdayAccommodation": "150 SR",
+            "fridayAccommodation": "150 SR",
+            "saturdayAccommodation": "150 SR"
+          },
+          "guestServiceFee":{
+            "guestServiceFee": "6.6 SR",
+            "thursdayGuestServiceFee": "17.6 SR",
+            "fridayGuestServiceFee": "17.6 SR",
+            "saturdayGuestServiceFee": "17.6 SR"
+          },
+          "guestTotalPrice":{
+            "guestTotalPrice": "66.6 SR",
+            "thursdayGuestTotalPrice": "177.6 SR",
+            "fridayGuestTotalPrice": "177.6 SR",
+            "saturdayGuestTotalPrice": "177.6 SR"
+          }
+        }
+      },
+      "hostFinancialCollection": {
+        "totalPriceStay":{
+          "totalPriceStay": "60 SR",
+          "thursdayTotalPriceStay": "160 SR",
+          "fridayTotalPriceStay": "160 SR",
+          "saturdayTotalPriceStay": "160 SR"
+        },
+        "hostServiceFee": {
+          "hostServiceFee": "4.2 SR",
+          "thursdayHostServiceFee": "11.2 SR",
+          "fridayHostServiceFee": "11.2 SR",
+          "saturdayHostServiceFee": "11.2 SR"
+        },
+        "hostTotalPrice": {
+          "hostTotalPrice": "46.5 SR",
+          "thursdayHostTotalPrice": "139.5 SR",
+          "fridayHostTotalPrice": "139.5 SR",
+          "saturdayHostTotalPrice": "139.5 SR"
+        }
+      }
+    }
+  }
+
+}

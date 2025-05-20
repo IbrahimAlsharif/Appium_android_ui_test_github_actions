@@ -4,9 +4,27 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="0f91bf6d-cffc-43da-8fb4-2267fe240123" name="Changes" comment="update script file location">
+    <list default="true" id="0f91bf6d-cffc-43da-8fb4-2267fe240123" name="Changes" comment="test parallel workflows">
+      <change afterPath="$PROJECT_DIR$/flows/Setup.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/test/java/base/Finder.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/test/java/base/Go.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/test/java/base/Setup.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/test/java/base/TearDownTest.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/test/java/configs/listeners/Listener.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/test/java/configs/listeners/TimeoutExceptionListener.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/test/java/configs/pipeline/PipelineConfig.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/test/java/configs/pipeline/command.text" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/test/java/configs/testRail/APIClient.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/test/java/configs/testRail/APIException.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/test/java/configs/testRail/TestRailManager.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/test/java/configs/testdata/TestData.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/test/java/configs/testdata/TestDataFactory.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/test/java/configs/testdata/stagingArabic.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/test/java/configs/testdata/stagingEnglish.json" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/AndroidTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/AndroidTest.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/AndroidTest.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/HomePOM.java" beforeDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -24,6 +42,11 @@
     </option>
   </component>
   <component name="Git.Settings">
+    <option name="RECENT_BRANCH_BY_REPOSITORY">
+      <map>
+        <entry key="$PROJECT_DIR$" value="master" />
+      </map>
+    </option>
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
   </component>
   <component name="MarkdownSettingsMigration">
@@ -43,10 +66,16 @@
     &quot;RunOnceActivity.OpenProjectViewOnStart&quot;: &quot;true&quot;,
     &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
     &quot;SHARE_PROJECT_CONFIGURATION_FILES&quot;: &quot;true&quot;,
+    &quot;last_opened_file_path&quot;: &quot;/Users/ibrahimalsharif/IdeaProjects/Appium_android_ui_test_github_actions/flows&quot;,
     &quot;settings.editor.selected.configurable&quot;: &quot;reference.projectsettings.compiler.javacompiler&quot;
   }
 }</component>
   <component name="RecentsManager">
+    <key name="CopyFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$/flows" />
+      <recent name="$PROJECT_DIR$/src/test/java" />
+      <recent name="$PROJECT_DIR$/.github/workflows" />
+    </key>
     <key name="MoveFile.RECENT_KEYS">
       <recent name="$PROJECT_DIR$/scripts" />
       <recent name="$PROJECT_DIR$/src" />
@@ -56,33 +85,7 @@
       <recent name="" />
     </key>
   </component>
-  <component name="RunManager" selected="TestNG.AndroidTest (1)">
-    <configuration name="LoadTest" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="UILoadTest.LoadTest" />
-      <module name="Training_appium_example" />
-      <extension name="coverage">
-        <pattern>
-          <option name="PATTERN" value="UILoadTest.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
-    <configuration name="MainTest" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="UILoadTest.MainTest" />
-      <module name="Training_appium_example" />
-      <extension name="coverage">
-        <pattern>
-          <option name="PATTERN" value="UILoadTest.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
+  <component name="RunManager" selected="TestNG./Users/ibrahimalsharif/IdeaProjects/Appium_android_ui_test_github_actions/flows/Setup.xml">
     <configuration name="RunAppiumServer.sh" type="ShConfigurationType" temporary="true">
       <option name="SCRIPT_TEXT" value="" />
       <option name="INDEPENDENT_SCRIPT_PATH" value="true" />
@@ -109,8 +112,8 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="AndroidTest" type="TestNG" temporary="true" nameIsGenerated="true">
-      <module name="Training_appium_example" />
+    <configuration name="AndroidTest (2)" type="TestNG" temporary="true" nameIsGenerated="true">
+      <module name="Training_selenium_example" />
       <option name="PACKAGE_NAME" value="" />
       <option name="MAIN_CLASS_NAME" value="AndroidTest" />
       <option name="TEST_OBJECT" value="CLASS" />
@@ -120,13 +123,40 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
+    <configuration name="Setup" type="TestNG" temporary="true" nameIsGenerated="true">
+      <module name="Training_selenium_example" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="base.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="base" />
+      <option name="MAIN_CLASS_NAME" value="base.Setup" />
+      <option name="TEST_OBJECT" value="CLASS" />
+      <properties />
+      <listeners />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="/Users/ibrahimalsharif/IdeaProjects/Appium_android_ui_test_github_actions/flows/Setup.xml" type="TestNG" temporary="true" nameIsGenerated="true">
+      <module name="Training_selenium_example" />
+      <option name="SUITE_NAME" value="$PROJECT_DIR$/flows/Setup.xml" />
+      <option name="TEST_OBJECT" value="SUITE" />
+      <properties />
+      <listeners />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
     <recent_temporary>
       <list>
+        <item itemvalue="TestNG./Users/ibrahimalsharif/IdeaProjects/Appium_android_ui_test_github_actions/flows/Setup.xml" />
+        <item itemvalue="TestNG.Setup" />
+        <item itemvalue="TestNG.AndroidTest (2)" />
         <item itemvalue="TestNG.AndroidTest (1)" />
         <item itemvalue="Shell Script.RunAppiumServer.sh" />
-        <item itemvalue="TestNG.AndroidTest" />
-        <item itemvalue="Application.MainTest" />
-        <item itemvalue="Application.LoadTest" />
       </list>
     </recent_temporary>
   </component>
@@ -258,7 +288,21 @@
       <option name="project" value="LOCAL" />
       <updated>1667990248498</updated>
     </task>
-    <option name="localTasksCounter" value="18" />
+    <task id="LOCAL-00018" summary="update script file location">
+      <created>1682156470271</created>
+      <option name="number" value="00018" />
+      <option name="presentableId" value="LOCAL-00018" />
+      <option name="project" value="LOCAL" />
+      <updated>1682156470271</updated>
+    </task>
+    <task id="LOCAL-00019" summary="test parallel workflows">
+      <created>1682156670734</created>
+      <option name="number" value="00019" />
+      <option name="presentableId" value="LOCAL-00019" />
+      <option name="project" value="LOCAL" />
+      <updated>1682156670734</updated>
+    </task>
+    <option name="localTasksCounter" value="20" />
     <servers />
   </component>
   <component name="UnknownFeatures">
@@ -293,7 +337,8 @@
     <MESSAGE value="remove script folder from the batch file" />
     <MESSAGE value="test bash" />
     <MESSAGE value="update script file location" />
-    <option name="LAST_COMMIT_MESSAGE" value="update script file location" />
+    <MESSAGE value="test parallel workflows" />
+    <option name="LAST_COMMIT_MESSAGE" value="test parallel workflows" />
   </component>
   <component name="XSLT-Support.FileAssociations.UIState">
     <expand />

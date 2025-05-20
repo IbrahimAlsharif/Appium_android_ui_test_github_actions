@@ -1,0 +1,14 @@
+<!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd" >
+<suite name="Setup driver and configurations" parallel="false">
+    <test name="Setup Main Flow Tests">
+
+        <parameter name="language" value="Arabic"/>
+        <parameter name="device" value="Android Emulator"/>
+        <parameter name="platform" value="Android"/>
+        <parameter name="branch" value="staging"/>
+        <classes>
+            <class name="base.Setup">
+            </class>
+        </classes>
+    </test>
+</suite>

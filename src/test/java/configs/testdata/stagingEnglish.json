@@ -1,0 +1,45 @@
+{
+  "base-url": {
+    "staging": {
+      "arabic": "https://dev.darent.com/ar"
+    }
+  },
+  "users": {
+    "validUser": {
+      "mobile": "000000096",
+      "otp": "8888"
+    },
+    "invalidUser": {
+      "username": "000000000",
+      "otp": "8899"
+    }
+  },
+  "products": [
+    {
+      "id": 101,
+      "name": "Wireless Headphones",
+      "price": 59.99,
+      "category": "Electronics",
+      "stock": 20
+    },
+    {
+      "id": 102,
+      "name": "Smartphone",
+      "price": 699.99,
+      "category": "Electronics",
+      "stock": 15
+    },
+    {
+      "id": 103,
+      "name": "Running Shoes",
+      "price": 89.99,
+      "category": "Footwear",
+      "stock": 30
+    }
+  ],
+  "payment": {
+    "visa": {
+      "cvv": "123"
+    }
+  }
+}
