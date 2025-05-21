@@ -4,6 +4,7 @@ import configs.pipeline.PipelineConfig;
 import configs.testRail.TestRailManager;
 import configs.testdata.TestData;
 import io.appium.java_client.android.AndroidDriver;
+import io.appium.java_client.android.options.UiAutomator2Options;
 import io.appium.java_client.remote.MobileCapabilityType;
 import org.openqa.selenium.JavascriptExecutor;
 import org.openqa.selenium.WebDriver;
@@ -30,25 +31,34 @@ public class Setup {
     @Test(priority = 1)
     @Parameters({"language", "branch", "device","platform"})
     public void setUpLocalDriver(String language, String branch, String device, String platform) throws Exception {
+        System.setProperty("selenium.http.factory", "apache");
+        String apkPath = "/Users/ibrahimalsharif/IdeaProjects/Appium_android_ui_test_github_actions/src/app-debug.apk";
+        UiAutomator2Options options = new UiAutomator2Options()
+                .setDeviceName(device).
+                setPlatformName(platform).
+                setAutomationName("UiAutomator2")
+                .setApp(apkPath)
+                .setAppPackage("jinyoung.dev.todolist")
+                .setAppActivity(".ui.actionitem.MainActivity")
+                .setAllowDelayAdb(true);
 
-        DesiredCapabilities capabilities = new DesiredCapabilities();
-        capabilities.setCapability("platformName", platform);
-        capabilities.setCapability("automationName", "UiAutomator2");
-        capabilities.setCapability("deviceName", device);
-        capabilities.setCapability("app_activity", ".ui.actionitem.MainActivity");
-        capabilities.setCapability("allowTestPackages", "true");
-        capabilities.setCapability("app_package", "jinyoung.dev.todolist");
+//        DesiredCapabilities capabilities = new DesiredCapabilities();
+//        capabilities.setCapability("appium:appActivity", ".ui.actionitem.MainActivity");
+//        capabilities.setCapability("appium:appPackage", "jinyoung.dev.todolist");
+//        capabilities.setCapability("appium:allowTestPackages", true);
+//        capabilities.setCapability("platformName", platform);
+//        capabilities.setCapability("automationName", "UiAutomator2");
+//        capabilities.setCapability("deviceName", device);
 
         if (PipelineConfig.testRailReport) {
             TestRailManager testRailManager = new TestRailManager();
             Go.testRunId = testRailManager.createTestRun("ProjectName", 1);
         }
-        String apkPath = "src/app-debug.apk";
-        capabilities.setCapability(MobileCapabilityType.APP, apkPath);
-        File app = new File(apkPath);
-        capabilities.setCapability(MobileCapabilityType.APP, app.getAbsolutePath());
-        driver = new AndroidDriver(new URL("http://127.0.0.1:4723/wd/hub"), capabilities);
-        driver.manage().timeouts().implicitlyWait(15, TimeUnit.SECONDS);
+//        capabilities.setCapability(MobileCapabilityType.APP, apkPath);
+//        File app = new File(apkPath);
+//        capabilities.setCapability(MobileCapabilityType.APP, app.getAbsolutePath());
+        driver = new AndroidDriver(new URL("http://127.0.0.1:4723"), options);
+        driver.manage().timeouts().implicitlyWait( Duration.ofSeconds(15));
         configureHelperComponents();
     }
 
@@ -58,4 +68,5 @@ public class Setup {
         Go.initialize(driver, javascriptExecutor, wait);
         Finder.initialize(driver, wait);
     }
+
 }
